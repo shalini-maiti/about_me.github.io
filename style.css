@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #fafafa;
+    color: #111;
+  }
+  .container { max-width: 900px; margin: auto; padding: 20px; }
+  .site-header { border-bottom: 1px solid #ddd; padding: 20px; }
+  .header-inner { display: flex; gap: 20px; align-items: center; }
+  .avatar img { width: 80px; height: 80px; border-radius: 16px; }
+  .meta { list-style: none; padding: 0; margin: 0; display: flex; gap: 10px; flex-wrap: wrap; font-size: 14px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+  .tab { background: #eee; border: none; padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+  .tab.active { background: #111; color: white; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  .card { background: white; padding: 16px; border: 1px solid #ddd; border-radius: 12px; margin-bottom: 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+  .pill { background: #111; color: white; padding: 6px 12px; border-radius: 999px; text-decoration: none; }
+  .site-footer { text-align: center; padding: 20px; border-top: 1px solid #ddd; margin-top: 40px; font-size: 14px; color: #666; }
+  pre { background: #f4f4f4; padding: 10px; border-radius: 8px; }
+  
