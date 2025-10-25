@@ -42,20 +42,59 @@
         <div class="card">
           <h3>Gen3DEval: Using vLLMs for Automatic Evaluation of Generated 3D Objects</h3>
           <p><strong>Shalini Maiti</strong>; Lourdes Agapito; Filippos Kokkinos — CVPR 2025</p>
-          <ul>
+          <strong>Abstract:</strong> Rapid advancements in text-to-3D generation require robust and scalable evaluation metrics that align closely with
+          human judgment, a need unmet by current metrics such as
+          PSNR and CLIP, which require ground-truth data or focus only on prompt fidelity. To address this, we introduce
+          Gen3DEval, a novel evaluation framework that leverages
+          vision large language models (vLLMs) specifically finetuned for 3D object quality assessment. Gen3DEval evaluates text fidelity, appearance, and surface quality by analyzing 3D surface normals, without requiring ground-truth
+          comparisons, bridging the gap between automated metrics
+          and user preferences. Compared to state-of-the-art taskagnostic models, Gen3DEval demonstrates superior performance in user-aligned evaluations, placing it as a comprehensive and accessible benchmark for future research on
+          text-to-3D generation. The project page can be found <a href="https://shalini-maiti.github.io/gen3deval.github.io/" target="_blank">here</a>.
+          <!-- <ul>
             <li>Finetuned a vLLM for holistic, automated evaluation of generated 3D assets.</li>
             <li>Introduced Gen3DEval-Bench + leaderboard.</li>
-          </ul>
+          </ul> -->
         </div>
 
         <div class="card">
           <h3>Unsupervised 2D–3D Lifting of Non-Rigid Objects Using Local Constraints</h3>
           <p><strong>Shalini Maiti</strong>; Lourdes Agapito; Benjamin Graham — CVPR 4D Vision Workshop 2025</p>
+          <strong>Abstract:</strong> For non-rigid objects, predicting the 3D shape from 2D keypoint observations is ill-posed due to occlusions, and the
+          need to disentangle changes in viewpoint and changes in
+          shape. This challenge has often been addressed by embedding low-rank constraints into specialized models. These
+          models can be hard to train, as they depend on finding a
+          canonical way of aligning observations, before they can
+          learn detailed geometry. These constraints have limited the
+          reconstruction quality. We show that generic, high capacity
+          models, trained with an unsupervised loss, allow for more
+          accurate predicted shapes. In particular, applying low-rank
+          constraints to localized subsets of the full shape allows the
+          high capacity to be suitably constrained. We reduce the
+          state-of-the-art reconstruction error on the S-Up3D dataset
+          by over 70%.
         </div>
 
         <div class="card">
           <h3>VGRP-Bench: Visual Grid Reasoning Puzzle Benchmark for LVLMs</h3>
           <p>Yufan Ren; Konstantinos Tertikas; <strong>Shalini Maiti</strong> — arXiv 2025</p>
+          <strong>Abstract:</strong> Large Vision-Language Models (LVLMs) struggle with puzzles, which require precise perception, 
+          rule comprehension, and logical reasoning. Assessing and enhancing their performance in this domain is crucial, 
+          as it reflects their ability to engage in structured reasoning — an essential skill
+          for real-world problem-solving. However, existing benchmarks primarily evaluate pre-trained models without additional training or 
+          fine-tuning, often lack a dedicated focus on reasoning, and fail to establish a systematic evaluation framework. 
+          To address these limitations, we introduce VGRP-Bench, a Visual Grid Reasoning Puzzle Benchmark featuring 20 diverse puzzles. 
+          VGRP-Bench spans multiple difficulty levels, and includes extensive experiments not only
+          on existing chat LVLMs (e.g., GPT-4o), but also on reasoning LVLMs (e.g., Gemini-Thinking). 
+          Our results reveal that even the state-of-the-art LVLMs struggle with these puzzles, 
+          highlighting fundamental limitations in their puzzle-solving capabilities. 
+          Most importantly, through systematic experiments, we identify and analyze key factors influencing
+          LVLMs’ puzzle-solving performance, including the number of clues, grid size, and rule complexity. 
+          Furthermore, we explore two Supervised Fine-Tuning (SFT) strategies that can be used in post-training: 
+          SFT on solutions (S-SFT) and SFT on synthetic reasoning processes (R-SFT). While both
+          methods significantly improve performance on trained puzzles, they exhibit limited generalization to unseen ones. 
+          We will release VGRP-Bench to facilitate further research on
+          LVLMs for complex, real-world problem-solving. <a href="https://yufan-ren.com/subpage/VGRPBench/" target="_blank">Project
+          page</a>
         </div>
 
         <!-- <div class="card">
