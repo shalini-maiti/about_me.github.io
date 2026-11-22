@@ -6,17 +6,182 @@ body {
   }
   .container { max-width: 900px; margin: auto; padding: 20px; }
   .site-header { border-bottom: 1px solid #ddd; padding: 20px; }
-  .header-inner { display: flex; gap: 20px; align-items: center; }
+    .header-inner {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .title {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .tagline {
+    margin: 8px 0;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .affiliation {
+    margin: 0 0 14px;
+    color: #555;
+    font-size: 16px;
+  }
+
+  .intro {
+    max-width: 72ch;
+    margin: 0 0 18px;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  @media (max-width: 600px) {
+    .header-inner {
+      flex-direction: column;
+    }
+  }
   .avatar img { width: 80px; height: 80px; border-radius: 16px; }
   .meta { list-style: none; padding: 0; margin: 0; display: flex; gap: 10px; flex-wrap: wrap; font-size: 14px; }
-  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
-  .tab { background: #eee; border: none; padding: 8px 12px; border-radius: 8px; cursor: pointer; }
-  .tab.active { background: #111; color: white; }
-  .tab-panel { display: none; }
-  .tab-panel.active { display: block; }
+    html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 24px;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    margin: 24px 0 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .site-nav a {
+    color: #2367ae;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .site-nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .site-nav a:focus-visible {
+    outline: 2px solid #2367ae;
+    outline-offset: 5px;
+  }
+
+  .tab-panel {
+    display: block;
+    margin-bottom: 40px;
+  }
   .card { background: white; padding: 16px; border: 1px solid #ddd; border-radius: 12px; margin-bottom: 16px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
   .pill { background: #111; color: white; padding: 6px 12px; border-radius: 999px; text-decoration: none; }
   .site-footer { text-align: center; padding: 20px; border-top: 1px solid #ddd; margin-top: 40px; font-size: 14px; color: #666; }
   pre { background: #f4f4f4; padding: 10px; border-radius: 8px; }
   
+  /* Publication rows: preview left, paper details right. */
+
+.publication {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.publication + .publication {
+  border-top: 1px solid #e8e8e8;
+}
+
+.publication-preview {
+  display: block;
+}
+
+.publication-preview img {
+  display: block;
+  width: 100%;
+  height: 165px;
+  object-fit: contain;
+}
+
+.publication-info {
+  min-width: 0;
+}
+
+.publication-info h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.publication-info h3 a {
+  color: #2367ae;
+  text-decoration: none;
+}
+
+.publication-info h3 a:hover {
+  text-decoration: underline;
+}
+
+.publication-authors,
+.publication-venue,
+.publication-links {
+  margin: 0 0 6px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.publication-venue {
+  font-style: italic;
+}
+
+.publication-links a {
+  color: #2367ae;
+  text-underline-offset: 3px;
+}
+
+.equal-contribution {
+  color: #555;
+}
+
+.publication-description {
+  margin: 10px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.theses {
+  margin-top: 24px;
+}
+
+.theses summary {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.theses li {
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .publication {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .publication-preview {
+    width: min(100%, 320px);
+  }
+
+  .publication-preview img {
+    height: auto;
+    max-height: 220px;
+  }
+}

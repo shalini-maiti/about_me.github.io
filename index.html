@@ -15,8 +15,26 @@
           <img src="images/profile.jpg" alt="Profile photo of Shalini Maiti">
         </div>
         <div class="title">
-          <h1>Shalini Maiti</h1>
-          <p class="tagline">PhD at Meta Superintelligence Labs & University College London — 3D Computer Vision and Language Models</p>
+                    <h1>Shalini Maiti</h1>
+
+          <p class="tagline">
+            AI Researcher; Geometric &amp; Multimodal Learning,
+            Reasoning &amp; Agents
+          </p>
+
+          <p class="affiliation">
+            University College London · Meta (FAIR + MSL)
+          </p>
+
+          <p class="intro">
+            PhD researcher at University College London
+            (in collaboration with Meta) with research experience
+            spanning geometric learning, vision-language models,
+            model merging, and clarification-aware agents.
+            My work connects learning structured representations
+            with grounded understanding, generation, and reliable
+            decision-making.
+          </p>
           <ul class="meta">
             <li>📍 London, United Kingdom</li>
             <li>✉️ <a href="mailto:shalini.maiti@gmail.com">shalini.maiti@gmail.com</a></li>
@@ -28,87 +46,339 @@
     </header>
 
     <main class="container">
-      <div class="tabs">
-        <button class="tab active" data-tab="research">🔬 Research</button>
-        <button class="tab" data-tab="cv">📚 CV</button>
-        <button class="tab" data-tab="projects">💻 Projects</button>
-        <button class="tab" data-tab="travel">✈️ Travel</button>
-        <button class="tab" data-tab="poetry">📝 Poetry</button>
-        <button class="tab" data-tab="about">👋 About</button>
-      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#collaborate">Collaborate</a>
+        <a href="#cv">📄 CV</a>
+      </nav>
+
+        <section class="tab-panel" id="interests">
+        <h2>Research interests</h2>
+
+        <p>
+          My current work and directions I’m interested
+          in exploring include:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Geometry and physical intelligence:</strong>
+            3D/4D representations, world models,
+            embodied agents and robotics.
+          </li>
+          <li>
+            <strong>Multimodal learning and generation:</strong>
+            joint vision-language training, grounding,
+            and generative architectures across modalities.
+          </li>
+          <li>
+            <strong>Reasoning and reliable agents:</strong>
+            clarification, evaluation, memory,
+            and long-horizon video understanding.
+          </li>
+          <li>
+            <strong>Learning structure from limited data:</strong>
+            supervised, unsupervised and reinforcement learning
+            in data-scarce settings, with possible connections
+            to scientific data, molecular and materials discovery.
+          </li>
+        </ul>
+      </section>
 
       <section class="tab-panel active" id="research">
-        <h2>Research Papers</h2>
-        <div class="card">
-          <h3>Gen3DEval: Using vLLMs for Automatic Evaluation of Generated 3D Objects</h3>
-          <p><strong>Shalini Maiti</strong>; Lourdes Agapito; Filippos Kokkinos — CVPR 2025</p>
-          <strong>Abstract:</strong> Rapid advancements in text-to-3D generation require robust and scalable evaluation metrics that align closely with
-          human judgment, a need unmet by current metrics such as
-          PSNR and CLIP, which require ground-truth data or focus only on prompt fidelity. To address this, we introduce
-          Gen3DEval, a novel evaluation framework that leverages
-          vision large language models (vLLMs) specifically finetuned for 3D object quality assessment. Gen3DEval evaluates text fidelity, appearance, and surface quality by analyzing 3D surface normals, without requiring ground-truth
-          comparisons, bridging the gap between automated metrics
-          and user preferences. Compared to state-of-the-art taskagnostic models, Gen3DEval demonstrates superior performance in user-aligned evaluations, placing it as a comprehensive and accessible benchmark for future research on
-          text-to-3D generation. The project page can be found <a href="https://shalini-maiti.github.io/gen3deval.github.io/" target="_blank">here</a>.
-          <!-- <ul>
-            <li>Finetuned a vLLM for holistic, automated evaluation of generated 3D assets.</li>
-            <li>Introduced Gen3DEval-Bench + leaderboard.</li>
-          </ul> -->
+        <h2>Publications</h2>
+
+        <div class="publication-list">
+
+          <article class="publication">
+            <a class="publication-preview"
+               href="images/papers/ambigui.png">
+              <img src="images/papers/ambigui.png"
+                   alt="AmbiGUI benchmark overview"
+                   loading="lazy">
+            </a>
+
+            <div class="publication-info">
+              <h3>
+                AmbiGUI: Act or Ask? Benchmarking Clarification
+                in GUI Agents Under Ambiguous Instructions
+              </h3>
+
+              <p class="publication-authors">
+                <strong>Shalini Maiti</strong>, Akhil Mathur,
+                Sam Devlin, Xinyi Chen, Fadime Sener,
+                Enrique Alfonseca, Bugra Tekin
+              </p>
+
+              <p class="publication-venue">
+                Under review, 2026
+              </p>
+
+              <p class="publication-description">
+                Evaluating when GUI agents should act or ask,
+                and whether clarification improves task completion.
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <a class="publication-preview"
+               href="images/papers/souper.png">
+              <img src="images/papers/souper.png"
+                   alt="Correlation structure motivating
+                        category-aware model merging"
+                   loading="lazy">
+            </a>
+
+            <div class="publication-info">
+              <h3>
+                <a href="https://aclanthology.org/2026.findings-emnlp.33/">
+                  Souper-Model: How Simple Arithmetic Unlocks
+                  State-of-the-Art LLM Performance
+                </a>
+              </h3>
+
+              <p class="publication-authors">
+                <strong>Shalini Maiti*</strong>, Amar Budhiraja*,
+                Bhavul Gauri, Gaurav Chaurasia, Anton Protopopov,
+                Alexis Audran-Reiss, Michael Slater, Despoina Magka,
+                Tatiana Shavrina, Roberta Raileanu, Yoram Bachrach
+              </p>
+
+              <p class="publication-venue">
+                Findings of EMNLP, 2026
+              </p>
+
+              <p class="publication-links">
+                <a href="https://aclanthology.org/2026.findings-emnlp.33/">
+                  paper
+                </a>
+                /
+                <a href="https://arxiv.org/abs/2511.13254">
+                  arXiv
+                </a>
+                <span class="equal-contribution">
+                  · *Equal contribution
+                </span>
+              </p>
+
+              <p class="publication-description">
+                Category-aware expert selection and weighted
+                model merging improve LLM capabilities
+                without retraining.
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <a class="publication-preview"
+               href="images/papers/gen3deval.png">
+              <img src="images/papers/gen3deval.png"
+                   alt="Gen3DEval assessment of text fidelity,
+                        appearance and surface quality"
+                   loading="lazy">
+            </a>
+
+            <div class="publication-info">
+              <h3>
+                <a href="https://shalini-maiti.github.io/gen3deval.github.io/">
+                  Gen3DEval: Using vLLMs for Automatic
+                  Evaluation of Generated 3D Objects
+                </a>
+              </h3>
+
+              <p class="publication-authors">
+                <strong>Shalini Maiti</strong>,
+                Lourdes Agapito, Filippos Kokkinos
+              </p>
+
+              <p class="publication-venue">
+                Computer Vision and Pattern Recognition
+                (CVPR), 2025
+              </p>
+
+              <p class="publication-links">
+                <a href="https://shalini-maiti.github.io/gen3deval.github.io/">
+                  project page
+                </a>
+                /
+                <a href="https://arxiv.org/abs/2504.08125">
+                  arXiv
+                </a>
+              </p>
+
+              <p class="publication-description">
+                Fine-tuned vision-language models assess
+                the text fidelity, appearance and surface
+                quality of generated 3D objects.
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <a class="publication-preview"
+               href="images/papers/lifting.png">
+              <img src="images/papers/lifting.png"
+                   alt="Unsupervised reconstruction of non-rigid
+                        3D objects from 2D keypoints"
+                   loading="lazy">
+            </a>
+
+            <div class="publication-info">
+              <h3>
+                <a href="https://arxiv.org/abs/2504.19227">
+                  Unsupervised 2D-3D lifting of non-rigid
+                  objects using local constraints
+                </a>
+              </h3>
+
+              <p class="publication-authors">
+                <strong>Shalini Maiti</strong>,
+                Lourdes Agapito, Benjamin Graham
+              </p>
+
+              <p class="publication-venue">
+                4DVision Workshop at CVPR, 2025
+              </p>
+
+              <p class="publication-links">
+                <a href="https://arxiv.org/abs/2504.19227">
+                  arXiv
+                </a>
+                /
+                <a href="https://github.com/facebookresearch/allrap">
+                  code
+                </a>
+              </p>
+
+              <p class="publication-description">
+                Recovering non-rigid 3D structure from
+                2D observations using local low-rank constraints.
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <a class="publication-preview"
+               href="images/papers/vgrp.png">
+              <img src="images/papers/vgrp.png"
+                   alt="VGRP-Bench visual puzzles and
+                        reasoning evaluation"
+                   loading="lazy">
+            </a>
+
+            <div class="publication-info">
+              <h3>
+                <a href="https://yufan-ren.com/subpage/VGRP-Bench/">
+                  VGRP-Bench: Visual Grid Reasoning Puzzle
+                  Benchmark for Large Vision-Language Models
+                </a>
+              </h3>
+
+              <p class="publication-authors">
+                Yufan Ren, Konstantinos Tertikas,
+                <strong>Shalini Maiti</strong>, Junlin Han,
+                Tong Zhang, Sabine Süsstrunk, Filippos Kokkinos
+              </p>
+
+              <p class="publication-venue">
+                Preprint, 2025
+              </p>
+
+              <p class="publication-links">
+                <a href="https://yufan-ren.com/subpage/VGRP-Bench/">
+                  project page
+                </a>
+                /
+                <a href="https://arxiv.org/abs/2503.23064">
+                  arXiv
+                </a>
+                /
+                <a href="https://huggingface.co/datasets/VGRP-Bench/VGRP-Bench">
+                  dataset
+                </a>
+              </p>
+
+              <p class="publication-description">
+                Testing perception, rule-following and
+                reasoning across 20 visual grid puzzles.
+              </p>
+            </div>
+          </article>
+
         </div>
 
-        <div class="card">
-          <h3>Unsupervised 2D–3D Lifting of Non-Rigid Objects Using Local Constraints</h3>
-          <p><strong>Shalini Maiti</strong>; Lourdes Agapito; Benjamin Graham — CVPR 4D Vision Workshop 2025</p>
-          <strong>Abstract:</strong> For non-rigid objects, predicting the 3D shape from 2D keypoint observations is ill-posed due to occlusions, and the
-          need to disentangle changes in viewpoint and changes in
-          shape. This challenge has often been addressed by embedding low-rank constraints into specialized models. These
-          models can be hard to train, as they depend on finding a
-          canonical way of aligning observations, before they can
-          learn detailed geometry. These constraints have limited the
-          reconstruction quality. We show that generic, high capacity
-          models, trained with an unsupervised loss, allow for more
-          accurate predicted shapes. In particular, applying low-rank
-          constraints to localized subsets of the full shape allows the
-          high capacity to be suitably constrained. We reduce the
-          state-of-the-art reconstruction error on the S-Up3D dataset
-          by over 70%.
-        </div>
+        <details class="theses">
+          <summary>Earlier research and theses</summary>
+          <ul>
+            <li>
+              <a href="docs/masters_thesis_shalini_maiti.pdf">
+                Master’s Thesis — Domain Randomization
+                for Hand Pose Estimation
+              </a>
+              — TU Graz, 2020
+            </li>
+            <li>
+              <a href="docs/btp_report.pdf">
+                Bachelor’s Thesis — Conversational AI:
+                Understanding Conversations &amp; Bots
+              </a>
+              — DA-IICT, 2014
+            </li>
+          </ul>
+        </details>
+      </section>
 
-        <div class="card">
-          <h3>VGRP-Bench: Visual Grid Reasoning Puzzle Benchmark for LVLMs</h3>
-          <p>Yufan Ren; Konstantinos Tertikas; <strong>Shalini Maiti</strong> — arXiv 2025</p>
-          <strong>Abstract:</strong> Large Vision-Language Models (LVLMs) struggle with puzzles, which require precise perception, 
-          rule comprehension, and logical reasoning. Assessing and enhancing their performance in this domain is crucial, 
-          as it reflects their ability to engage in structured reasoning — an essential skill
-          for real-world problem-solving. However, existing benchmarks primarily evaluate pre-trained models without additional training or 
-          fine-tuning, often lack a dedicated focus on reasoning, and fail to establish a systematic evaluation framework. 
-          To address these limitations, we introduce VGRP-Bench, a Visual Grid Reasoning Puzzle Benchmark featuring 20 diverse puzzles. 
-          VGRP-Bench spans multiple difficulty levels, and includes extensive experiments not only
-          on existing chat LVLMs (e.g., GPT-4o), but also on reasoning LVLMs (e.g., Gemini-Thinking). 
-          Our results reveal that even the state-of-the-art LVLMs struggle with these puzzles, 
-          highlighting fundamental limitations in their puzzle-solving capabilities. 
-          Most importantly, through systematic experiments, we identify and analyze key factors influencing
-          LVLMs’ puzzle-solving performance, including the number of clues, grid size, and rule complexity. 
-          Furthermore, we explore two Supervised Fine-Tuning (SFT) strategies that can be used in post-training: 
-          SFT on solutions (S-SFT) and SFT on synthetic reasoning processes (R-SFT). While both
-          methods significantly improve performance on trained puzzles, they exhibit limited generalization to unseen ones. 
-          We will release VGRP-Bench to facilitate further research on
-          LVLMs for complex, real-world problem-solving. <a href="https://yufan-ren.com/subpage/VGRPBench/" target="_blank">Project
-          page</a>
-        </div>
-
-        <div class="card">
-          <h3><a href="docs/souper_model_magg_arr_2026.pdf" target="_blank">Souper-Model (SoCE): How Simple Arithmetic Unlocks State-of-the-Art LLM Performance</a></h3>
-          <p><strong>Shalini Maiti*</strong>; Amar Budhiraja*; Bhavul Gauri; Gaurav Chaurasia; Anton Protopopov; Alexis Audran-Reiss; Michael Slater; Despoina Magka; Tatiana Shavrina; Roberta Raileanu; Yoram Bachrach — ARR under review 2026</p>
-          <strong>Abstract:</strong> Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse domains, but their training remains resource- and time-intensive, requiring massive compute power and careful orchestration of training procedures. Model souping-the practice of averaging weights from multiple models of the same architecture-has emerged as a promising pre- and post-training technique that can enhance performance without expensive retraining. In this paper, we introduce Soup Of Category Experts (SoCE), a principled approach for model souping that utilizes benchmark composition to identify optimal model candidates and applies non-uniform weighted averaging to maximize performance. Contrary to previous uniform-averaging approaches, our method leverages the observation that benchmark categories often exhibit low inter-correlations in model performance. SoCE identifies "expert" models for each weakly-correlated category cluster and combines them using optimized weighted averaging rather than uniform weights. We demonstrate that the proposed method improves performance and robustness across multiple domains, including multilingual capabilities, tool calling, and math and achieves state-of-the-art results on the Berkeley Function Calling Leaderboard. <a href="https://arxiv.org/abs/2511.13254/" target="_blank">Project
-          page</a>
-        </div>
-
-        <h2>Theses</h2>
+      <section class="tab-panel" id="news">
+        <h2>News</h2>
         <ul>
-          <li><a href="docs/masters_thesis_shalini_maiti.pdf" target="_blank">Master’s Thesis — Domain Randomization for Hand Pose Estimation (TU Graz, 2020)</a></li>
-          <li><a href="docs/btp_report.pdf" target="_blank">Bachelor’s Thesis — Conversational AI: Understanding Conversations & Bots (DA-IICT, 2014)</a></li>
+          <li>
+            <strong>October 2026:</strong>
+            <a href="https://aclanthology.org/2026.findings-emnlp.33/">
+              Souper-Model
+            </a>
+            published in Findings of EMNLP 2026;
+            presented as a poster at EMNLP.
+          </li>
+          <li>
+            <strong>2026:</strong>
+            AmbiGUI, our work on clarification in GUI agents,
+            is under review.
+          </li>
+          <li>
+            <strong>2026:</strong>
+            Research Scientist internship at Meta Superintelligence
+            Labs, working on clarification-aware GUI agents.
+          </li>
         </ul>
+        <p>
+          <strong>Upcoming:</strong>
+          PhD thesis submission planned for December 2026.
+        </p>
+      </section>
+
+      <section class="tab-panel" id="collaborate">
+        <h2>Request a collaboration meeting</h2>
+        <p>
+          I welcome requests to discuss a specific research
+          collaboration. Please include a brief introduction,
+          the exact topic or research question, and why you
+          would like to collaborate with me.
+        </p>
+        <p>
+          <strong>Availability:</strong>
+          Fridays, 15:00–19:00 London time (GMT/BST).<br>
+          <strong>Meeting length:</strong> 25 minutes.
+        </p>
+        <p>
+          I’ll review your request and reply to arrange
+          a suitable slot.
+        </p>
+        <a class="pill"
+           href="mailto:shalini.maiti@gmail.com?subject=Collaboration%20request%3A%20%5Bspecific%20topic%5D&amp;body=Introduction%3A%0A%0AExact%20topic%20or%20research%20question%3A%0A%0AWhy%20I%20would%20like%20to%20collaborate%20with%20you%3A%0A">
+          Request a collaboration meeting
+        </a>
       </section>
 
       <section class="tab-panel" id="cv">
@@ -126,9 +396,19 @@
           <div>
             <h3>Experience</h3>
             <ul>
-              <li>Meta Superintelligence Labs, AI Researcher: 2022 - Present </li>
+                <li>
+                Meta (FAIR + MSL), PhD Student / AI Researcher:
+                2022–2026
+              </li>
+              <li>
+                Meta Superintelligence Labs,
+                Research Scientist Intern: 2026
+              </li>
               <li>Amazon Prime Air, SDE: 2021 - 2022</li>
-              <li>Insitute of Computer Vision and Graphics (TU Graz), Student Project Assistant: 2019 - 2021</li>
+              <li>
+                Institute of Computer Graphics and Vision
+                (TU Graz), Student Project Assistant: 2019–2021
+              </li>
               <li>Cybrilla, Full Stack Developer: 2016 - 2018 </li>
               <li>Candyman Entertainment, Co-Founder: 2015 - 2016 </li>
               <li>Keepworks, Full Stack Developer: 2014 - 2015 </li>
@@ -137,43 +417,23 @@
         </div>
       </section>
 
-      <section class="tab-panel" id="projects">
+      <!-- <section class="tab-panel" id="projects">
         <h2>GitHub Projects</h2>
         <p>Visit my GitHub for open-source work → <a href="https://github.com/shalini-maiti">github.com/shalini-maiti</a></p>
-      </section>
-
-      <section class="tab-panel" id="travel">
-        <h2>Travel Log</h2>
-        <ul>
-          <!-- <li>🍵 Kyoto, Japan (2024) — Tea, temples, trains.</li>
-          <li>🌌 Reykjavík, Iceland (2023) — Aurora and hot springs.</li>
-          <li>🍮 Lisbon, Portugal (2023) — Pastéis + streetcars.</li> -->
-        </ul>
-      </section>
-
-      <section class="tab-panel" id="poetry">
-        <h2>Pocket Poems</h2>
-          <!-- <pre>code hums low
-  keys like rain on tin
-  thoughts knit constellations
-  while the kettle decides
-  to be a comet</pre>
-
-          <pre>two shirts
-  one book
-  three sunsets
-  a handful of new hellos
-  all of it fits</pre> -->
       </section>
 
       <section class="tab-panel" id="about">
         <h2>About</h2>
         <p>I’m a researcher exploring intersections of 3D computer vision and large language models. Currently pursuing my PhD at University College London and Meta AI.</p>
       </section>
+
+      <h1>Shalini Maiti</h1>
+          <p class="tagline">PhD at Meta Superintelligence Labs & University College London — 3D Computer Vision and Language Models</p>
+          <ul class="meta"> -->
     </main>
 
     <footer class="site-footer">
-      <p>Built with ❤️ · © 2025 Shalini Maiti</p>
+      <p>Built with ❤️ · © 2026 Shalini Maiti</p>
     </footer>
   </body>
 </html>
